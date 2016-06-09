@@ -1,0 +1,10 @@
+"use strict";
+require("typings-test");
+var npmtsG = require("../dist/install");
+describe("npmtsCheck", function () {
+    it("", function () {
+        npmtsG.installNpmtsGlobally();
+    });
+});
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLFFBQU8sY0FFUCxDQUFDLENBRm9CO0FBRXJCLElBQVksTUFBTSxXQUFNLGlCQUFpQixDQUFDLENBQUE7QUFFMUMsUUFBUSxDQUFDLFlBQVksRUFBQztJQUNsQixFQUFFLENBQUMsRUFBRSxFQUFDO1FBQ0YsTUFBTSxDQUFDLG9CQUFvQixFQUFFLENBQUM7SUFDbEMsQ0FBQyxDQUFDLENBQUE7QUFDTixDQUFDLENBQUMsQ0FBQSIsImZpbGUiOiJ0ZXN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFwidHlwaW5ncy10ZXN0XCJcclxuXHJcbmltcG9ydCAqIGFzIG5wbXRzRyBmcm9tIFwiLi4vZGlzdC9pbnN0YWxsXCI7XHJcblxyXG5kZXNjcmliZShcIm5wbXRzQ2hlY2tcIixmdW5jdGlvbigpe1xyXG4gICAgaXQoXCJcIixmdW5jdGlvbigpe1xyXG4gICAgICAgIG5wbXRzRy5pbnN0YWxsTnBtdHNHbG9iYWxseSgpO1xyXG4gICAgfSlcclxufSkiXX0=
