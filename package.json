@@ -1,0 +1,26 @@
+{
+  "name": "npmts-g",
+  "version": "1.0.0",
+  "description": "use globally installed npmts if it fits the version range",
+  "main": "dist/index.js",
+  "typings":"dist/index.d.ts",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pushrocks/npmts-g.git"
+  },
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/pushrocks/npmts-g/issues"
+  },
+  "homepage": "https://gitlab.com/pushrocks/npmts-g#README",
+  "devDependencies": {
+    "npmts": "^5.2.5"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.0"
+  }
+}
