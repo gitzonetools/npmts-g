@@ -1,6 +1,6 @@
 {
   "name": "npmts-g",
-  "version": "5.2.4",
+  "version": "5.2.5",
   "description": "use globally installed npmts if it fits the version range",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
