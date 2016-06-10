@@ -5,6 +5,7 @@ export let installNpmtsGlobally = function(){
   let requiredNpmtsVersion = "^" + packJson.version;
   if (!plugins.shelljs.which('npmts')) {
     console.log("NPMTS wasn't found globally, so it is being installed now");
+    plugins.shelljs.exec("npm install npmts@latest");
   } else {
     let globalNpmtsVersion = plugins.shelljs.exec("npmts -v").stdout;
     if(plugins.semver.satisfies(globalNpmtsVersion,requiredNpmtsVersion)){
