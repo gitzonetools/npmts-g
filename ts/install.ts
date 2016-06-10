@@ -11,6 +11,7 @@ export let installNpmtsGlobally = function(){
       console.log("OK! global npmts version satisfies needed version");
     } else {
       console.log("GlobalNPMTS does not satisfy required version, so we are installing it locally.");
+      plugins.shelljs.exec("npm install npmts@" + packJson.version);
     }
   }
 }
