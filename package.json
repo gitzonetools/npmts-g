@@ -19,7 +19,6 @@
   },
   "homepage": "https://gitlab.com/pushrocks/npmts-g#README",
   "devDependencies": {
-    "npmts": "^5.3.28",
     "typings-test": "^1.0.1"
   },
   "dependencies": {
