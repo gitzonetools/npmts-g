@@ -19,12 +19,13 @@
   },
   "homepage": "https://gitlab.com/pushrocks/npmts-g#README",
   "devDependencies": {
-    "npmts": "^5.3.0",
+    "npmts": "^5.3.28",
     "typings-test": "^1.0.1"
   },
   "dependencies": {
-    "semver": "^5.1.0",
-    "shelljs": "^0.7.0",
-    "typings-global": "^1.0.3"
+    "@types/shelljs": "^0.3.27",
+    "semver": "^5.3.0",
+    "shelljs": "^0.7.2",
+    "typings-global": "^1.0.6"
   }
 }

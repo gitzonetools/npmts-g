@@ -8,9 +8,11 @@ export let installNpmtsGlobally = function(){
     plugins.shelljs.cd("../..");
     plugins.shelljs.exec("npm install npmts@latest");
   } else {
-    let globalNpmtsVersion = plugins.shelljs.exec("npmts -v").stdout;
-    if(plugins.semver.satisfies(globalNpmtsVersion,requiredNpmtsVersion)){
-      console.log("OK! global npmts version satisfies needed version");
+    let globalNpmtsVersionOutput = plugins.shelljs.exec("npmts -v",{silent:true}).stdout;
+    let npmtsVersion = /\n?(.*)\n?\s*$/.exec(globalNpmtsVersionOutput)[1];
+    console.log(`found global npmts in version ${npmtsVersion}`);
+    if(plugins.semver.satisfies(npmtsVersion,requiredNpmtsVersion)){
+      console.log(`OK! global npmts version satisfies needed version`);
     } else {
       console.log("GlobalNPMTS does not satisfy required version, so we are installing it locally.");
       plugins.shelljs.cd("../..");
